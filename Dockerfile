@@ -1,8 +1,8 @@
-FROM openjdk:11-alpine
+FROM openjdk:17-alpine
 
-COPY target/hello-world.jar /app/hello-world.jar
+COPY target/hello-world.jar /src/main/hello-world.jar
 
-WORKDIR /app
+WORKDIR /src/main
 
 EXPOSE 80
 
